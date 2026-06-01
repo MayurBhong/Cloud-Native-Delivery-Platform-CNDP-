@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NexOps — AWS & DevOps Engineering</title>
+  <title>NexOps &mdash; AWS & DevOps Engineering</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
@@ -36,10 +37,10 @@
       overflow-x: hidden;
     }
 
-    /* ══════════ CANVAS PARTICLES ══════════ */
+    /* ========== CANVAS PARTICLES ========== */
     #particles { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
 
-    /* ══════════ GRID OVERLAY ══════════ */
+    /* ========== GRID OVERLAY ========== */
     body::before {
       content: '';
       position: fixed; inset: 0; z-index: 0; pointer-events: none;
@@ -49,7 +50,7 @@
       background-size: 48px 48px;
     }
 
-    /* ══════════ NAV ══════════ */
+    /* ========== NAV ========== */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       height: var(--nav-h);
@@ -93,7 +94,7 @@
     }
     .nav-btn:hover { background: var(--cyan); transform: translateY(-1px); }
 
-    /* ══════════ HERO ══════════ */
+    /* ========== HERO ========== */
     .hero {
       min-height: 100vh;
       display: flex; flex-direction: column;
@@ -164,7 +165,7 @@
     }
     @keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.7)} }
 
-    /* hero right — floating terminal */
+    /* hero right &mdash; floating terminal */
     .hero-terminal {
       position: absolute; right: 0; top: 50%;
       transform: translateY(-42%);
@@ -194,7 +195,7 @@
     .blink { display:inline-block; width:7px; height:14px; background:var(--aws); vertical-align:middle; animation:blink 1s steps(1) infinite; }
     @keyframes blink { 50%{opacity:0} }
 
-    /* ══════════ METRICS STRIP ══════════ */
+    /* ========== METRICS STRIP ========== */
     .metrics {
       position: relative; z-index: 1;
       background: var(--bg2);
@@ -224,7 +225,7 @@
     .m-val sup { font-size: 1.2rem; color: var(--aws); }
     .m-label { margin-top: 0.4rem; font-size: 0.72rem; color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; }
 
-    /* ══════════ SECTION COMMON ══════════ */
+    /* ========== SECTION COMMON ========== */
     section { position: relative; z-index: 1; }
     .wrap { max-width: 1300px; margin: 0 auto; padding: 6rem 4rem; }
 
@@ -242,7 +243,7 @@
       margin-bottom: 1rem;
     }
 
-    /* ══════════ SERVICES ══════════ */
+    /* ========== SERVICES ========== */
     .services-bg { background: var(--bg2); }
 
     .services-grid {
@@ -265,7 +266,8 @@
     .svc:hover { background: var(--glass); }
     .svc:hover::before { transform: scaleX(1); }
 
-    .svc-icon { font-size: 2rem; margin-bottom: 1.2rem; display: block; }
+    .svc-icon { font-size: 2rem; margin-bottom: 1.2rem; display: block; color: var(--aws); }
+    .svc:hover .svc-icon { color: var(--cyan); transition: color 0.3s; }
     .svc-name {
       font-family: 'Exo 2', sans-serif; font-size: 1.05rem; font-weight: 700;
       color: var(--bright); margin-bottom: 0.6rem;
@@ -280,7 +282,7 @@
     }
     .stag:hover { border-color: var(--aws); color: var(--aws); }
 
-    /* ══════════ SKILLS TABLE ══════════ */
+    /* ========== SKILLS TABLE ========== */
     .table-wrap { overflow-x: auto; margin-top: 3rem; }
 
     table {
@@ -317,7 +319,7 @@
       border-radius: 2px;
     }
 
-    /* ══════════ PIPELINE ══════════ */
+    /* ========== PIPELINE ========== */
     .pipeline-bg { background: var(--bg2); }
     .pipe-grid {
       display: grid; grid-template-columns: 1fr 1fr;
@@ -356,9 +358,9 @@
     .pipe-info p { font-size: 0.88rem; color: var(--text); line-height: 1.9; margin-bottom: 0.8rem; }
     .flist { list-style: none; margin-top: 1.4rem; display: flex; flex-direction: column; gap: 0.75rem; }
     .flist li { display: flex; gap: 0.7rem; align-items: center; font-size: 0.84rem; color: var(--text); }
-    .flist li::before { content: '▶'; color: var(--green); font-size: 0.55rem; flex-shrink: 0; }
+    .flist li::before { content: '\25B6'; color: var(--green); font-size: 0.55rem; flex-shrink: 0; }
 
-    /* ══════════ AWS SERVICES ══════════ */
+    /* ========== AWS SERVICES ========== */
     .aws-grid {
       display: grid; grid-template-columns: repeat(4,1fr);
       gap: 1rem; margin-top: 3.5rem;
@@ -379,7 +381,7 @@
     .a-name { font-family: 'Exo 2', sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--bright); margin-bottom: 0.5rem; }
     .a-desc { font-size: 0.75rem; color: var(--muted); line-height: 1.7; }
 
-    /* ══════════ CONTACT ══════════ */
+    /* ========== CONTACT ========== */
     .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; margin-top: 3.5rem; align-items: start; }
 
     .contact-info h3 { font-family: 'Exo 2', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--bright); margin-bottom: 1rem; }
@@ -430,7 +432,7 @@
     }
     .submit-btn:hover { background: var(--cyan); transform: translateY(-2px); }
 
-    /* ══════════ FOOTER ══════════ */
+    /* ========== FOOTER ========== */
     footer {
       background: var(--bg2);
       border-top: 1px solid var(--border);
@@ -450,13 +452,13 @@
     .foot-links a:hover { color: var(--aws); }
     .foot-copy { font-size: 0.65rem; color: var(--muted); letter-spacing: 0.08em; }
 
-    /* ══════════ ANIMATIONS ══════════ */
+    /* ========== ANIMATIONS ========== */
     @keyframes fadeUp {
       from { opacity:0; transform:translateY(24px); }
       to   { opacity:1; transform:translateY(0); }
     }
 
-    /* ══════════ RESPONSIVE ══════════ */
+    /* ========== RESPONSIVE ========== */
     @media (max-width: 1100px) {
       .hero-terminal { display: none; }
       .aws-grid { grid-template-columns: repeat(2,1fr); }
@@ -484,7 +486,7 @@
 
 <canvas id="particles"></canvas>
 
-<!-- ═══ NAV ═══ -->
+<!-- === NAV === -->
 <nav>
   <a href="#" class="nav-logo">Nex<span class="dot">Ops</span></a>
   <ul class="nav-links">
@@ -494,10 +496,10 @@
     <li><a href="#aws">AWS</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <button class="nav-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me →</button>
+  <button class="nav-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me &rarr;</button>
 </nav>
 
-<!-- ═══ HERO ═══ -->
+<!-- === HERO === -->
 <div style="position:relative;z-index:1">
 <div class="hero">
   <div class="hero-eyebrow">AWS & DevOps Engineering</div>
@@ -507,46 +509,46 @@
     <span class="sub-em">DevOps-Driven.</span>
   </h1>
   <p class="hero-desc">
-    I design, build, and automate enterprise-grade infrastructure on AWS — from Kubernetes clusters to zero-downtime CI/CD pipelines. Infrastructure is code. Delivery is continuous.
+    I design, build, and automate enterprise-grade infrastructure on AWS &mdash; from Kubernetes clusters to zero-downtime CI/CD pipelines. Infrastructure is code. Delivery is continuous.
   </p>
   <div class="hero-actions">
     <a href="#services" class="btn-primary">Explore Services</a>
-    <a href="#pipeline" class="btn-outline">View Pipeline →</a>
+    <a href="#pipeline" class="btn-outline">View Pipeline &rarr;</a>
   </div>
   <div class="live-badge">
     <span class="live-dot"></span>
-    Systems Operational — 99.99% Uptime
+    Systems Operational &mdash; 99.99% Uptime
   </div>
 
   <!-- terminal -->
   <div class="hero-terminal">
     <div class="term-bar">
       <div class="tdot td-r"></div><div class="tdot td-y"></div><div class="tdot td-g"></div>
-      <span class="term-title">deploy.sh — production</span>
+      <span class="term-title">deploy.sh &mdash; production</span>
     </div>
     <div class="term-body">
-      <div class="tl"><span class="tp">❯</span><span class="tc">git push origin main</span></div>
+      <div class="tl"><span class="tp">&gt;</span><span class="tc">git push origin main</span></div>
       <div class="to"><span class="tk">trigger:</span> <span class="tv">github-actions / deploy</span></div>
       <br>
-      <div class="tl"><span class="tp">❯</span><span class="tc">mvn clean package -Pprod</span></div>
-      <div class="to"><span class="tv">✓</span> BUILD SUCCESS <span class="tcm">[3.1s]</span></div>
+      <div class="tl"><span class="tp">&gt;</span><span class="tc">mvn clean package -Pprod</span></div>
+      <div class="to"><span class="tv">&#10003;</span> BUILD SUCCESS <span class="tcm">[3.1s]</span></div>
       <br>
-      <div class="tl"><span class="tp">❯</span><span class="tc">docker build &amp; push → ECR</span></div>
-      <div class="to"><span class="tv">✓</span> Image: app:sha-4f2a19c <span class="tcm">142MB</span></div>
+      <div class="tl"><span class="tp">&gt;</span><span class="tc">docker build &amp; push &rarr; ECR</span></div>
+      <div class="to"><span class="tv">&#10003;</span> Image: app:sha-4f2a19c <span class="tcm">142MB</span></div>
       <br>
-      <div class="tl"><span class="tp">❯</span><span class="tc">kubectl rollout status</span></div>
-      <div class="to"><span class="tv">✓</span> 3/3 pods RUNNING <span class="tk">p99:</span><span class="tv">46ms</span></div>
+      <div class="tl"><span class="tp">&gt;</span><span class="tc">kubectl rollout status</span></div>
+      <div class="to"><span class="tv">&#10003;</span> 3/3 pods RUNNING <span class="tk">p99:</span><span class="tv">46ms</span></div>
       <br>
-      <div class="tl"><span class="tp">❯</span><span class="tc">cloudwatch alarm check</span></div>
-      <div class="to"><span class="tv">✓</span> All alarms <span class="tv">OK</span> <span class="tcm">// deploy complete</span></div>
+      <div class="tl"><span class="tp">&gt;</span><span class="tc">cloudwatch alarm check</span></div>
+      <div class="to"><span class="tv">&#10003;</span> All alarms <span class="tv">OK</span> <span class="tcm">// deploy complete</span></div>
       <br>
-      <div class="tl"><span class="tp">❯</span> <span class="blink"></span></div>
+      <div class="tl"><span class="tp">&gt;</span> <span class="blink"></span></div>
     </div>
   </div>
 </div>
 </div>
 
-<!-- ═══ METRICS ═══ -->
+<!-- === METRICS === -->
 <div class="metrics">
   <div class="metric">
     <div class="m-val">99<sup>.99%</sup></div>
@@ -566,7 +568,7 @@
   </div>
 </div>
 
-<!-- ═══ SERVICES ═══ -->
+<!-- === SERVICES === -->
 <section id="services" class="services-bg">
   <div class="wrap">
     <div class="sec-tag">What I Do</div>
@@ -574,42 +576,42 @@
     <div class="services-grid">
 
       <div class="svc" style="--svc-color:var(--aws)">
-        <span class="svc-icon">☁️</span>
+        <span class="svc-icon"><i class="fas fa-cloud"></i></span>
         <div class="svc-name">AWS Cloud Architecture</div>
         <div class="svc-text">Well-Architected multi-region designs on EKS, Lambda, RDS, CloudFront. Fault-tolerant, auto-scaling, cost-optimised.</div>
         <div class="svc-tags"><span class="stag">EKS</span><span class="stag">Lambda</span><span class="stag">RDS</span><span class="stag">CloudFront</span></div>
       </div>
 
       <div class="svc" style="--svc-color:var(--cyan)">
-        <span class="svc-icon">⚙️</span>
+        <span class="svc-icon"><i class="fas fa-cogs"></i></span>
         <div class="svc-name">CI/CD Pipelines</div>
-        <div class="svc-text">End-to-end automation with Jenkins, GitHub Actions, and AWS CodePipeline. Build → Test → Scan → Deploy → Validate.</div>
+        <div class="svc-text">End-to-end automation with Jenkins, GitHub Actions, and AWS CodePipeline. Build &rarr; Test &rarr; Scan &rarr; Deploy &rarr; Validate.</div>
         <div class="svc-tags"><span class="stag">Jenkins</span><span class="stag">GitHub Actions</span><span class="stag">ArgoCD</span><span class="stag">GitOps</span></div>
       </div>
 
       <div class="svc" style="--svc-color:var(--green)">
-        <span class="svc-icon">🏗️</span>
+        <span class="svc-icon"><i class="fas fa-drafting-compass"></i></span>
         <div class="svc-name">Infrastructure as Code</div>
         <div class="svc-text">Immutable infra with Terraform & AWS CDK. State management, drift detection, and full GitOps-managed environments.</div>
         <div class="svc-tags"><span class="stag">Terraform</span><span class="stag">AWS CDK</span><span class="stag">CloudFormation</span></div>
       </div>
 
       <div class="svc" style="--svc-color:#a855f7">
-        <span class="svc-icon">🐳</span>
+        <span class="svc-icon"><i class="fab fa-docker"></i></span>
         <div class="svc-name">Container Orchestration</div>
         <div class="svc-text">Docker, Kubernetes on EKS, Helm charts, Istio service mesh. Auto-scaling, self-healing, zero-downtime rollouts.</div>
         <div class="svc-tags"><span class="stag">Kubernetes</span><span class="stag">Helm</span><span class="stag">Istio</span><span class="stag">ECS</span></div>
       </div>
 
       <div class="svc" style="--svc-color:var(--aws)">
-        <span class="svc-icon">📊</span>
+        <span class="svc-icon"><i class="fas fa-chart-bar"></i></span>
         <div class="svc-name">Observability & Monitoring</div>
         <div class="svc-text">Full-stack monitoring with Prometheus, Grafana, CloudWatch, X-Ray tracing, ELK stack, and SLO alerting.</div>
         <div class="svc-tags"><span class="stag">Prometheus</span><span class="stag">Grafana</span><span class="stag">X-Ray</span><span class="stag">ELK</span></div>
       </div>
 
       <div class="svc" style="--svc-color:var(--red)">
-        <span class="svc-icon">🔒</span>
+        <span class="svc-icon"><i class="fas fa-shield-alt"></i></span>
         <div class="svc-name">Cloud Security</div>
         <div class="svc-text">IAM least-privilege, VPC hardening, WAF, GuardDuty, Secrets Manager. SOC2, PCI-DSS, HIPAA compliance automation.</div>
         <div class="svc-tags"><span class="stag">IAM</span><span class="stag">WAF</span><span class="stag">KMS</span><span class="stag">GuardDuty</span></div>
@@ -619,7 +621,7 @@
   </div>
 </section>
 
-<!-- ═══ SKILLS TABLE ═══ -->
+<!-- === SKILLS TABLE === -->
 <section id="skills">
   <div class="wrap">
     <div class="sec-tag">Technical Skills</div>
@@ -689,17 +691,17 @@
   </div>
 </section>
 
-<!-- ═══ PIPELINE ═══ -->
+<!-- === PIPELINE === -->
 <section id="pipeline" class="pipeline-bg">
   <div class="wrap">
     <div class="sec-tag">DevOps Pipeline</div>
     <div class="sec-title">Code to Production<br>in Under 10 Minutes</div>
     <div class="pipe-grid">
       <div class="pipe-steps">
-        <div class="pstep done"><div class="pn">01</div><div><div class="pname">Code Push</div><div class="pdesc">Git push triggers webhook. Branch protection, mandatory PR review.</div></div><span class="pbadge b-done">✓ Done</span></div>
-        <div class="pstep done"><div class="pn">02</div><div><div class="pname">Build & Unit Test</div><div class="pdesc">Maven/Gradle compile, JUnit, JaCoCo coverage gate ≥ 80%.</div></div><span class="pbadge b-done">✓ Done</span></div>
-        <div class="pstep done"><div class="pn">03</div><div><div class="pname">Docker Build & Scan</div><div class="pdesc">Multi-stage build, Trivy CVE scan, push to Amazon ECR.</div></div><span class="pbadge b-done">✓ Done</span></div>
-        <div class="pstep run"><div class="pn">04</div><div><div class="pname">Staging Deploy</div><div class="pdesc">Helm upgrade on EKS staging, smoke + Gatling load tests.</div></div><span class="pbadge b-run">● Live</span></div>
+        <div class="pstep done"><div class="pn">01</div><div><div class="pname">Code Push</div><div class="pdesc">Git push triggers webhook. Branch protection, mandatory PR review.</div></div><span class="pbadge b-done">&#10003; Done</span></div>
+        <div class="pstep done"><div class="pn">02</div><div><div class="pname">Build & Unit Test</div><div class="pdesc">Maven/Gradle compile, JUnit, JaCoCo coverage gate &ge; 80%.</div></div><span class="pbadge b-done">&#10003; Done</span></div>
+        <div class="pstep done"><div class="pn">03</div><div><div class="pname">Docker Build & Scan</div><div class="pdesc">Multi-stage build, Trivy CVE scan, push to Amazon ECR.</div></div><span class="pbadge b-done">&#10003; Done</span></div>
+        <div class="pstep run"><div class="pn">04</div><div><div class="pname">Staging Deploy</div><div class="pdesc">Helm upgrade on EKS staging, smoke + Gatling load tests.</div></div><span class="pbadge b-run">&#9679; Live</span></div>
         <div class="pstep wait"><div class="pn">05</div><div><div class="pname">Production Deploy</div><div class="pdesc">Blue-green via ALB, 10% canary traffic split, auto-promote.</div></div><span class="pbadge b-wait">Pending</span></div>
         <div class="pstep wait"><div class="pn">06</div><div><div class="pname">Post-Deploy Validation</div><div class="pdesc">CloudWatch alarms, synthetic canaries, auto-rollback on breach.</div></div><span class="pbadge b-wait">Pending</span></div>
       </div>
@@ -720,7 +722,7 @@
   </div>
 </section>
 
-<!-- ═══ AWS SERVICES ═══ -->
+<!-- === AWS SERVICES === -->
 <section id="aws">
   <div class="wrap">
     <div class="sec-tag">AWS Platform</div>
@@ -738,7 +740,7 @@
   </div>
 </section>
 
-<!-- ═══ CONTACT ═══ -->
+<!-- === CONTACT === -->
 <section id="contact" class="services-bg">
   <div class="wrap">
     <div class="sec-tag">Get In Touch</div>
@@ -746,7 +748,7 @@
     <div class="contact-grid">
       <div class="contact-info">
         <h3>Have an Infrastructure Challenge?</h3>
-        <p>Whether you need a scalable AWS architecture, a battle-tested CI/CD pipeline, or a full DevOps transformation — let's talk. I respond within 24 hours.</p>
+        <p>Whether you need a scalable AWS architecture, a battle-tested CI/CD pipeline, or a full DevOps transformation &mdash; let's talk. I respond within 24 hours.</p>
         <div class="cinfo-items">
           <div class="cinfo-item">
             <div class="cinfo-icon"><i class="fas fa-envelope"></i></div>
@@ -754,7 +756,7 @@
           </div>
           <div class="cinfo-item">
             <div class="cinfo-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div><div class="cinfo-label">Location</div><div class="cinfo-val">Available Worldwide · Remote</div></div>
+            <div><div class="cinfo-label">Location</div><div class="cinfo-val">Available Worldwide &middot; Remote</div></div>
           </div>
           <div class="cinfo-item">
             <div class="cinfo-icon"><i class="fab fa-github"></i></div>
@@ -801,18 +803,18 @@
           <label>Message</label>
           <textarea placeholder="Describe your infrastructure challenge or project..."></textarea>
         </div>
-        <button class="submit-btn">Send Message →</button>
+        <button class="submit-btn">Send Message &rarr;</button>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ═══ FOOTER ═══ -->
+<!-- === FOOTER === -->
 <footer>
   <div class="foot-inner">
     <div>
       <div class="foot-brand">Nex<span class="dot">Ops</span></div>
-      <div class="foot-tagline">AWS · DevOps · Cloud-Native Engineering</div>
+      <div class="foot-tagline">AWS &middot; DevOps &middot; Cloud-Native Engineering</div>
     </div>
     <div class="foot-links">
       <a href="#services">Services</a>
@@ -826,7 +828,7 @@
 </footer>
 
 <script>
-  // ─── PARTICLE CANVAS ───
+  // --------------------
   const canvas = document.getElementById('particles');
   const ctx = canvas.getContext('2d');
   let W, H, particles = [];
@@ -892,7 +894,7 @@
   }
   animate();
 
-  // ─── SCROLL FADE-IN ───
+  // --------------------
   const fadeEls = document.querySelectorAll('.svc, .acard, .metric, .pstep, tbody tr');
   fadeEls.forEach(el => {
     el.style.opacity = '0';
@@ -913,7 +915,7 @@
   }, { threshold: 0.12 });
   fadeEls.forEach(el => io.observe(el));
 
-  // ─── NAV ACTIVE ON SCROLL ───
+  // --------------------
   const sections = document.querySelectorAll('section[id]');
   const navAs = document.querySelectorAll('.nav-links a');
   window.addEventListener('scroll', () => {
