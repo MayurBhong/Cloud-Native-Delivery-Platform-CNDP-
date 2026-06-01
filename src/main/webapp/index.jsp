@@ -504,7 +504,7 @@
 <div class="hero">
   <div class="hero-eyebrow">AWS & DevOps Engineering</div>
   <h1>
-    Mayur Bhong<br>
+    Aditya Pol<br>
     <em>AWS-Powered.</em><br>
     <span class="sub-em">DevOps-Driven.</span>
   </h1>
