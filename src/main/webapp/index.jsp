@@ -504,7 +504,7 @@
 <div class="hero">
   <div class="hero-eyebrow">AWS & DevOps Engineering</div>
   <h1>
-    Cloud-Native.<br>
+    Mayur Bhong<br>
     <em>AWS-Powered.</em><br>
     <span class="sub-em">DevOps-Driven.</span>
   </h1>
