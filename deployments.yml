@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: myweb
-        image: itsmedip/batch-071-074-077-regular:latest   # ✅ CHANGED
-        imagePullPolicy: Always                     # ✅ ADDED
+        image: mayurbhong/devops-project
+        imagePullPolicy: Always                     
         ports:
         - containerPort: 8080
